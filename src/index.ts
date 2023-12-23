@@ -5,7 +5,7 @@ interface Options {
     trustProxy?: boolean;
 }
 
-export const isHTTPS = (req: IncomingMessage, options: Options ): boolean | undefined => {
+export const isHTTPS = (req: IncomingMessage, options?: Options ): boolean | undefined => {
     options = options ?? { trustProxy: true }
     // Check x-forwarded-proto header
     options = { trustProxy: true, ...options };
