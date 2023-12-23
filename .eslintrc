@@ -1,0 +1,6 @@
+{
+  "extends": ["eslint-config-unjs"],
+  "rules": {
+    "unicorn/filename-case": 0
+  }
+}
