@@ -38,15 +38,16 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "unbuild",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint .",
     "release": "pnpm lint && pnpm build --minify && pnpm publish"
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "20.10.1",
-    "eslint": "8.56.0",
-    "eslint-config-unjs": "0.2.1",
-    "typescript": "5.3.3",
+    "@types/node": "20.14.13",
+    "eslint": "9.8.0",
+    "eslint-config-unjs": "0.3.2",
+    "typescript": "5.5.3",
     "unbuild": "2.0.0"
-  }
+  },
+  "packageManager": "pnpm@9.6.0"
 }
